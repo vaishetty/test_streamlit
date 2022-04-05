@@ -4,9 +4,9 @@ import pandas as pd
 import numpy as np
 
 def load_model():
-    with open('model.pkl', 'rb') as file:
+    with open('main/model.pkl', 'rb') as file:
         model = pickle.load(file)
-    with open('train_cols.pkl', 'rb') as file:
+    with open('main/train_cols.pkl', 'rb') as file:
         train_cols = pickle.load(file)
     return model, train_cols
 
